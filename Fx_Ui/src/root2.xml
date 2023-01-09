@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?> <!-- HBox는 컨트롤을 수평으로 배치하는 레이아웃 -->
+<?import javafx.scene.control.Button?>
+
+<HBox xmlns:fx = "http://javafx.com/fxml/1"
+fx:controller = "fx.RootController" prefHeight = "300.0" prefWidth = "500.0"
+alignment = "CENTER" spacing = "20.0">
+<!-- xml 파일당 별도의 컨트롤러를 지정해서 이벤트를 처리. xml레이아웃에서 이벤트 처리 자바코드를 완전히 분리.
+fx패키지에 RootController 이벤트 처리 자바를 만들어서 처리하면 된다. -->
+
+	<children>
+		<Button fx:id = "btn01" text = "버튼1" />
+		<!-- fx:id 속성명과 컨트롤러 클래스에서 @FXML 애노테이션으로 설정할 멤버변수명은 서로 일치해야한다. -->
+		<Button fx:id = "btn02" text = "버튼2" onAction = "#handleBtn02Action" />
+		<!-- onAction속성으로 이벤트를 등록하면 굳이 컨트롤러에서 이벤트를 등록하지 않고 
+		onAction = "#메서드명" 에서 지정한 해당메서드명을 컨트롤러에서 정의하면 된다.	그러면 정의된 메서드를 
+		바로 호출해서 이벤트를 처리한다.여기서는 handleBtn02Action()메서드를 호출한다.-->
+		<Button fx:id = "btn03" text = "버튼3" />
+	</children>
+</HBox>

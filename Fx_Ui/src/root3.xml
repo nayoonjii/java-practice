@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+
+<HBox xmlns:fx = "http://javafx.com/fxml/1"
+prefHeight = "100" prefWidth = "400" alignment = "CENTER" spacing = "20">
+
+<children>
+	<Label text = "검정바탕, 노란글씨" style = "-fx-background-color:black;-fx-text-fill:yellow;
+	-fx-padding:5;"/>
+	<!-- xml주석문 기호,  -fx-background-color속성은 배경색을 지정,
+	-fx-text-fill속성은 글자색, -fx-padding속성은 상하좌우 안여백을 동시지정 -->
+	<Label text = "파란바탕, 흰글씨" style = "-fx-background-color:blue;-fx-text-fill:white;
+	-fx-padding:5;" />
+	<Label text = "파란바탕, 흰글씨" style = "-fx-background-color:blue;-fx-text-fill:white;
+	-fx-padding:5;" />
+	
+</children>
+
+</HBox>
+
+

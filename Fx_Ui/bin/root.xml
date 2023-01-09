@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?> <!-- xml 주석문 기호, FX에서 XML로레이아웃을 
+그릴때 임포트 하는법 -->
+
+<HBox xmlns:fx = "http://javafx.com/fxml/1"> <!-- HBox는 컨트롤을 수평으로 배치하는 레이아웃 -->
+	<padding> <!-- 안쪽 여백 설정 -->
+		<Insets top="10" right="10" bottom="10" left="10"/>
+		<!-- 시계방향으로 위,오른쪽,아래쪽, 왼쪽 안여백을 설정 -->
+	</padding>
+	<spacing>10</spacing> <!-- 컨트롤 수평간격 -->
+	
+	<children> <!-- 자식 컨트롤 추가 -->
+		<TextField> <!-- TextField는 한줄 입력박스 컨트롤 -->
+	 		<prefWidth>200</prefWidth> <!-- 입력박스 폭 -->
+		</TextField>
+		
+		<Button>
+			<text>확인</text> <!-- 버튼위에 출력되는 캡션 문자열 -->
+		</Button>
+	</children>
+</HBox> 

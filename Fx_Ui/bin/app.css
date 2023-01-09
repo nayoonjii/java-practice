@@ -1,0 +1,18 @@
+/* 타입 선택자로 접근 -> XML태그명으로 접근 */
+Label{
+	-fx-padding:5; /* css 주석문 기호, 상하좌우 안여백을 5로 동시 설정*/
+}
+
+/*#id01 즉 #아이디 선택자명 으로 접근한다. 아이디 선택자는 유일해야한다.*/ 
+#id01{
+	-fx-background-color:black; /*배경색을 검정으로함*/
+	-fx-text-fill:yellow; /*글자색을 노랑으로*/
+}
+
+ /* 클래스 선택자는 .클래스선택자명으로 접근한다. 중복된 이름을 지정할수 있다. 그래서 반복적이고 동일한
+ui를 적용할때 유리하다. */
+
+.idClass{
+	-fx-background-color:blue;
+	-fx-text-fill:white; /*글자색을 흰색으로*/
+}
